@@ -29,7 +29,7 @@ class _ListItemSelectorState extends State<ListItemSelector> {
         decoration: BoxDecoration(
           color: item.isSelected == false
               ? const Color(0xFFE5E6E8)
-              : const Color(0xFFf16b26),
+              : Color.fromARGB(255, 20, 94, 33), //warna icon
           borderRadius: BorderRadius.circular(10),
         ),
         child: IconButton(
