@@ -156,6 +156,7 @@ class AppData {
       images: [
         'assets/images/skop.png',
         'assets/images/skop.png',
+        'assets/images/skop.png',
       ],
       isFavorite: false,
       sizes: ProductSizeType(
