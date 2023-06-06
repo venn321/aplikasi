@@ -149,7 +149,7 @@ class AppData {
     Product(
       name: ' Skop ',
       price: 50000,
-      about: 'Sekop Ajaib yang  bisa menumbuhkan seed dengan instan',
+      about: 'Sekop Ajaib yang  bisa menumbuhkan seed dengan instan.',
       isAvailable: true,
       off: 6000,
       quantity: 0,
