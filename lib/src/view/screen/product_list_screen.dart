@@ -79,7 +79,7 @@ class ProductListScreen extends StatelessWidget {
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           Text(
-                            '30% OFF DURING \nCOVID 19',
+                            'No Discount \nDiscount make we bangkrupt',
                             style: Theme.of(context)
                                 .textTheme
                                 .displaySmall
@@ -111,11 +111,6 @@ class ProductListScreen extends StatelessWidget {
                       ),
                     ),
                     const Spacer(),
-                    Image.asset(
-                      'assets/images/shopping.png',
-                      height: 125,
-                      fit: BoxFit.cover,
-                    )
                   ],
                 ),
               ),

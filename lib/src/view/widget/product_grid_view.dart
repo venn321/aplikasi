@@ -20,22 +20,6 @@ class ProductGridView extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          Visibility(
-            visible: isPriceOff(product),
-            child: Container(
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(30),
-                color: Colors.white,
-              ),
-              width: 80,
-              height: 30,
-              alignment: Alignment.center,
-              child: const Text(
-                "30% OFF",
-                style: TextStyle(fontWeight: FontWeight.w600),
-              ),
-            ),
-          ),
           IconButton(
             icon: Icon(
               Icons.favorite,
@@ -54,7 +38,7 @@ class ProductGridView extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.all(15),
       decoration: BoxDecoration(
-        color: const Color(0xFFE5E6E8),
+        color: Color.fromARGB(255, 188, 204, 133), //warna box product
         borderRadius: BorderRadius.circular(20),
       ),
       child: Image.asset(product.images[0], scale: 3),
@@ -68,7 +52,7 @@ class ProductGridView extends StatelessWidget {
         padding: const EdgeInsets.all(10),
         height: 60,
         decoration: const BoxDecoration(
-          color: Colors.white,
+          color: Color.fromARGB(255, 225, 212, 212), //warna box harga
           borderRadius: BorderRadius.only(
             bottomLeft: Radius.circular(15),
             bottomRight: Radius.circular(15),
@@ -85,7 +69,7 @@ class ProductGridView extends StatelessWidget {
                 maxLines: 1,
                 style: const TextStyle(
                   fontWeight: FontWeight.w500,
-                  color: Colors.grey,
+                  color: Color.fromARGB(255, 64, 0, 0), //warna tulisan
                 ),
               ),
             ),
